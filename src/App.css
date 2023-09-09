@@ -1,0 +1,91 @@
+/* Charles Bruner 4/10/2023 */
+.App {
+  text-align: center;
+  /* background-color: yellow; */
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex: 0 0 60%;
+  height: 100vh;
+}
+
+.graph-container {
+  /* margin-left: 10px; */
+  width: 47%;
+  height: 60%;
+  border: 5px solid black;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3 px;
+}
+
+.scatter {
+  width: 100%;
+  height: 100%;
+}
+
+.pie {
+  width: 100%;
+  height: 100%;
+}
+
+.histo {
+  width: 100%;
+  height: 100%;
+}
+
+.data {
+  width: 100%;
+  height: 100%;
+}
+
+.pie-histo-container {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.pie-container {
+  /* margin-left: 10px; */
+  width: 50%;
+  height: calc(40vh - 20px);
+  border: 5px solid black;
+  justify-content: center;
+  align-items: center;
+}
+
+.histogram-container {
+  width: 50%;
+  height: calc(40vh - 20px);
+  border: 5px solid black;
+  justify-content: center;
+  align-items: center;
+}
+
+.data-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 47%;
+  height: 99.5%;
+  border: 5px solid black;
+  display: flex;
+  justify-content: center;
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 9999;
+  background-color: orange;
+  border: 1px solid black;
+  padding: 10px;
+  pointer-events: none;
+}
+
+.highlighted {
+  fill: yellow !important;
+  stroke: black;
+  /* color: yellow; */
+}
